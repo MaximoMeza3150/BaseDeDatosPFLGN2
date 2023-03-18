@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --greyLight-2: #c8d0e7;
+
+    --card-background: linear-gradient(to bottom right, #f9fafc, #f7f7f8);
+    --card-shadow: inset 2px 2px 3px #ebebf3, inset 4px 4px 15px #ffffff, 3px 3px 12px #c2c7d4;
+
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  }
+  /* body{ */
+      /* https://uigradients.com/#Dull */
+    /* background: #C9D6FF; 
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+  } */
+
+.usaHover div:hover{
+      background: var(--bs-light);
+}
+.tarjetaNeuf div{
+  font: --bs-font-sans-serif;
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  background: var(--card-background);
+}
+
+.contenedorEmisiones{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-gap: 1em; */
+}
+.contenedorEmisiones div table tr,th {
+  text-align: center;
+}
