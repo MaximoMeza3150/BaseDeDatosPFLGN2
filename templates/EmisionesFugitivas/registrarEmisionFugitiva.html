@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../styles/emisionesFugitivas.css">
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <title>Intranet PPC PFLGN</title>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="../../index.html">Inicio</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Total</div>
+                            <a class="nav-link" href="./emisionesFugitivas.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-fire"></i></div>
+                                    Resumen de las emisiones fugitivas
+                            </a>
+                            <a class="nav-link" href='../EmisionesFugitivas/registrarEmisionFugitiva.html'>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-file"></i></div>
+                                    Registrar una nueva emisión fugitiva
+                            </a>
+                            <a class="nav-link" href='#'>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                                    Actualizar una emisión fugitiva
+                            </a>
+                            <a class="nav-link" href='#'>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+                                Emisiones fugitivas superadas
+                            </a>
+                            <a class="nav-link" href=#>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-explosion"></i></div>
+                                    Explosímetros
+                            </a>
+                            <a class="nav-link" href=#>
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                    Gráficos
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Áreas</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCrios" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                                    Emisiones activas
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseCrios" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="#">G1</a>
+                                    <a class="nav-link" href="#">G2</a>
+                                    <a class="nav-link" href="#">G3</a>
+                                    </nav>
+                                </div>
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCSU" aria-expanded="false" aria-controls="collapseLayouts">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></i></div>
+                                    Manuales
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+                                <div class="collapse" id="collapseCSU" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="#">Categorización</a>
+                                        <a class="nav-link" href="#">Procedimiento G1</a>
+                                        <a class="nav-link" href="#">Procedimiento G2</a>
+                                        <a class="nav-link" href="#">Procedimiento G3</a>
+                                    </nav>
+                                </div>
+        
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Usuario:</div>
+                        ProgramadorTEST
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main class="container">
+                    <div class="progress m-2"  role="progressbar" aria-label="Example 1px high" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+                        <div class="progress-bar" style="width: 25%"></div>
+                    </div>
+                      <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Antes de iniciar!</h4>
+                        Recuerde que al registrar una nueva emisión fugitiva debe tener:
+                        <li>El video de evidencia con la cámara FLIR.</li>
+                        <li>El último monitoreo con explosímetro a 20 cm.</li>
+                        <li>Ubicación exacta detallada en el P&ID.</li>
+                        <li>Número de aviso cargado en el SAP.</li>
+                        <hr>
+                        <p class="mb-0">Si aún no los tiene, puede regresar mas tarde..</p>
+                      </div>
+                      <br>
+                        <p>Tipo de unión:</p>
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">Roscado</label><br>
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">Bridado</label><br>
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">Empernado</label>
+                      
+                      <br>
+                      <div class="mb-3 mt-3">
+                        <label for="formFileSm" class="form-label">Adjuntar video de la cámara FLIR</label>
+                        <input class="form-control form-control-sm" id="formFileSm" type="file" accept="video/*">
+                      </div>
+                </main>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script src='../../js/demo/scriptsEmisiones.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    <script src="../../js/scripts.js"></script>
+</body>
+</html>
