@@ -32,5 +32,19 @@ window.addEventListener('DOMContentLoaded', event => {
             localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
         });
     }
-
 });
+
+const MAXIMO_TAMANIO_BYTES = 4000000; // 4MB = 4 millones de bytes
+const inputFLIR = document.querySelector('#inputFLIR');
+inputFLIR.addEventListener('change', function(){
+    if(this.files.length <= 0) return;
+    const archivo = this.files[0];
+    if (archivo.size > MAXIMO_TAMANIO_BYTES) {
+		const tamanioEnMb = MAXIMO_TAMANIO_BYTES / 4000000;
+		alert(`El tamaño máximo es 4 MB`);
+		// Limpiar
+		$miInput.value = "";
+	} else {
+		// Validación pasada. Envía el formulario o haz lo que tengas que hacer
+	}
+})
